@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { enhance } from '$lib/form';
+	import { invalidate} from "$app/navigation";
 	import { scale } from 'svelte/transition';
 	import { flip } from 'svelte/animate';
 
@@ -27,6 +28,7 @@
 		action="/todos"
 		method="post"
 		use:enhance={{
+			invalidate: invalidate,
 			result: async ({ form }) => {
 				form.reset();
 			}

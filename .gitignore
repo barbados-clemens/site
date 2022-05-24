@@ -8,3 +8,5 @@ package
 !.env.example
 .vercel
 .output
+
+.idea
