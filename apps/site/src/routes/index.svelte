@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-	import Counter from 'todo/Counter.svelte';
+	import {Counter} from '@site/todo';
 </script>
 
 <svelte:head>
